@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            padding: none;
+            margin: none;
+        }
+
+        .upper {
+            background-color: rgb(0, 0, 0);
+            height: auto;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            border: 2px solid black;
+        }
+
+        .navli {
+            list-style: none;
+            display: inline-flex;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(0, 0, 0);
+            padding: 15px;
+
+        }
+
+        .body1 {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+        .butt1 {
+            height: 60px;
+            width: 200px;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+        }
+
+        .body2 {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        .body-box-parent {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2px;
+        }
+
+        .body-two-heading {
+            font-weight: bold;
+            font-weight: 800px;
+            font-family: "Mona Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 2em;
+            line-height: 28px;
+        }
+
+        .body-two-child {
+            width: 25%;
+            height: 30vh;
+            padding: 3px;
+
+
+        }
+
+        .body-two-child p {
+            color: gray;
+        }
+
+        .butt2 {
+            height: 50px;
+            width: 170px;
+            font-weight: bold;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+            color: rgb(255, 247, 247);
+            font-size: 1em;
+
+        }
+
+        .body3 {
+            width: 100%;
+            height: 50vh;
+            background-color: rgb(255, 255, 255);
+            padding-left: 2%;
+
+
+
+        }
+
+        .body-tre-child {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+        }
+
+        .footer li {
+            list-style: none;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .footer lh {
+            color: rgb(63, 61, 61);
+        }
+
+        .footchild {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .foot-sub-child {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .foot-sub-child1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-foot{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .foot-part1  a {
+            text-decoration: none;
+            color: gray;
+
+
+        }
+        .foot-part2 img {
+            width:14% ;
+
+        }
+        .foot-part2{
+            text-align: end;
+        }
+
+
+        @media screen and (min-width: 0px) and (max-width: 768px) {
+            .body1 {
+                display: flex;
+                justify-content: start;
+            }
+                 
+            .body-two-child{
+                width: 25%;
+            height: 30vh;
+            padding: 3px; }
+            .body-box-parent {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            .body3 {
+                display: flex;
+                align-items: center;
+
+            }
+
+            .body-tre-child {
+                display: flex;
+                align-items: center;
+
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+
+            .foot-sub-child {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .foot-sub-child1 {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+        }
+
+        @media screen and(min-width:375px) and (max-width:769px){
+
+
+            .body1 {
+                display: flex;
+                justify-content: start;
+            }
+
+            .body-box-parent {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .body3 {
+                display: flex;
+                align-items: center;
+
+            }
+
+            .body-tre-child {
+                display: flex;
+                align-items: center;
+
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+
+            .foot-sub-child {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .foot-sub-child1 {
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="nav">
+
+            <div>
+                <img src="icon.ico" <sup style="color: rgb(60, 60, 60);">CLI</sup> rel="none" style="background-color:
+                rgb(65, 65, 65); "></img>
+
+            </div>
+            <div>
+                <ul>
+                    <li class="navli" id="navli1" style="margin-right: 5px;">Manual</li>
+                    <li class="navli" id="navli2" style="margin-left: 5px;">Release notes</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="body1">
+            <div style="width: 60%;">
+
+                <h1 style="font-size:4rem; color: white;">Take GitHub to the command line</h1>
+                <p style="color: gray;">
+                    GitHub CLI bring Github to your terminal.Free and open source.
+                </p>
+
+                <button class="butt1">Download for Windows</button>
+                <a href="www.google.com" style="display:block;text-decoration: none;color: rgb(255, 255, 255);">View
+                    installation
+                    instruction &#8594</a>
+            </div>
+
+        </div>
+
+        <div style="color: white; width: 100%;text-align: center;">
+            <p> $ gh alias</p>
+            <p>check out pull request</p>
+        </div>
+        <div style="color: white; width: 80%; margin: 2em; background-color: rgb(20, 19, 19); height:30vh ;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore doloribus ex nemo
+            sit ipsum, alias quisquam, iusto qui fuga, et quibusdam eos
+            incidunt. Atque perferendis iusto a ad exercitationem?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum delectus, labore mollitia
+            expedita omnis odio. Aut impedit eum at perspiciatis, quae dignissimos facilis qui laudantium
+            vitae,quisquam tempora quo iste.
+
+        </div>
+    </div>
+
+
+    <div class="body2">
+
+
+        <h1 style="font-weight: bold;font-family: Arial,;font-size:3rem;font-weight:800px;margin-top: 0px;">
+            Goodbye,context
+            switching.<br>Hello,terminal</h1>
+        <div class="body-box-parent">
+
+            <div class="body-two-child">
+                <h3 class="body-two-heading">Your entire GitHub workflow</h3>
+                <p>work with issues, pull requests, checkrs, releases and more.</p>
+                <a href="www.google.com" style="text-decoration: none;color: rgb(43, 48, 210);">View all GitHub CLI
+                    commands &#8594</a>
+            </div>
+            <div class="body-two-child">
+                <h3 class="body-two-heading">Script and customize</h3>
+                <p>Call the GitHub API to script almost any action, and set a custom alias for any command.</p>
+                <a href="www.google.com" style="text-decoration: none;color: rgb(43, 48, 210);">Learn about aliases and
+                    API
+                    commands &#8594</a>
+            </div>
+            <div class="body-two-child">
+                <h3 class="body-two-heading">Enterprise-ready</h3>
+                <p>Connect to GitHub Enterprise server in addition to GitHub.com.</p>
+                <a href="www.google.com" style="text-decoration: none;color: rgb(43, 48, 210);">Get set up with
+                    Enterprise
+                    commands &#8594</a>
+            </div>
+            <div class="body-two-child">
+                <h3 class="body-two-heading">We &lt; 3 community </h3>
+                <p>GitHub CLI is open source and ready for your contributions.</p>
+                <a href="www.google.com" style="text-decoration: none;color: rgb(43, 48, 210);">Contribute to CLI
+                    commands &#8594</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="body3">
+
+        <div class="body-tre-child">
+            <h1 style="font-weight: bold;">Try GitHub on the command line</h1>
+            <p>Github Cli brings GitHub to your terminal. Free and open source</p>
+            <button class="butt2">Install for Linux</button>
+            <a href="index.html" style="display: block;text-decoration: none;">View installation instruction &#8594</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div style="font-size: 2rem; font-weight: bold;">GitHub</div>
+        <div class="footchild">
+
+            <div class="foot-sub-child1">
+                <div>
+                    <ul>
+                        <lh>Product</lh>
+                        <li><a href="www.google.com">Features</a></li>
+                        <li><a href="www.google.com">Security</a></li>
+                        <li><a href="www.google.com">Enterprise</a></li>
+                        <li><a href="www.google.com">Customer Stories</a></li>
+                        <li><a href="www.google.com">Pricing</a></li>
+                        <li><a href="www.google.com">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <lh>Platform</lh>
+                        <li><a href="www.google.com">Developer API</a></li>
+                        <li><a href="www.google.com">Partners</a></li>
+                        <li><a href="www.google.com">Atom</a></li>
+                        <li><a href="www.google.com">Electron</a></li>
+                        <li><a href="www.google.com">GitHub Desktop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-sub-child">
+                <div>
+                    <ul>
+                        <lh>Support</lh>
+                        <li><a href="www.google.com">Help</a></li>
+                        <li><a href="www.google.com">Community Forum</a></li>
+                        <li><a href="www.google.com">Professional Services</a></li>
+                        <li><a href="www.google.com">Learning Lab</a></li>
+                        <li><a href="www.google.com">Status</a></li>
+                        <li><a href="www.google.com">Contact GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <lh>Company</lh>
+                        <li><a href="index.html">about</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                        <li><a href="index.html">Press</a></li>
+                        <li><a href="index.html">shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-foot">
+        <div class="foot-part1">
+            <a href="index.html">&#169;2024 GitHub, lnc</a>
+            <a href="index.html">Terms</a>
+            <a href="index.html">Privacy</a>
+        </div>
+        <div class="foot-part2">
+            <a href="index.html"><img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_6-twitter-64.png" alt="none"></a>
+        <a href="index.html"><img src="https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-15-64.png" alt="none"></a>
+    <a href="index.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/80-facebook-64.png" alt="none"></a>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
